@@ -1,0 +1,20 @@
+﻿----------------------------------Regla del Trapecio----------
+
+La primera de las fórmulas de Newton-Cotes está basada en
+aproximar f(x) sobre (x0, x1) mediante una línea recta, de ahí el
+nombre de “regla del trapecio”. La cual ya fue obtenida mediante la
+integración de P1(xs); sin embargo, también puede considerarse como
+una adaptación de la definición de la integral definida como una
+suma. Al evaluar b∫a f (x)dx , subdividiendo el intervalo de a a b en 
+n subintervalos.
+
+El área bajo la curva en cada subintervalo es aproximada por el
+trapecio formado al sustituir la curva por su secante. Entonces, la
+integral es aproximada por la suma de todas las áreas trapezoidales
+(si se conociera el límite de esta suma cuando el ancho del intervalo
+tiende a cero, se tendría el valor exacto de la integral, pero en la
+integración numérica, el número de intervalos es finito).
+Los intervalos no tienen que ser igual de anchos, pero la fórmula es
+más simple si esto sucede.
+
+La integral es aproximada por la suma de todas las áreas trapezoidales.

@@ -1,0 +1,41 @@
+﻿----------------------------Interpolación de Newton----------------
+
+Es un método de interpolación polinómica. Aunque sólo existe un único polinomio que interpola una serie de puntos, existen diferentes formas de calcularlo.
+
+Este método es útil para situaciones que requieran un número bajo de puntos para interpolar, 
+ya que a medida que crece el número de puntos, también lo hace el grado del polinomio.
+
+Existen ciertas ventajas en el uso de este polinomio respecto al polinomio interpolador de Lagrange.
+Por ejemplo, si fuese necesario añadir algún nuevo punto o nodo a la función, tan sólo habría que 
+calcular este último punto, dada la relación de recurrencia existente y demostrada anteriormente.
+
+Dados n+1 escalares distintos z_0, z_1,..., z_n y n+1 escalares (iguales ó distintos) w_0, w_1,...,w_n 
+se define el polinomio interpolador en la forma:
+
+p(z) = c_0 + c_1(z- z_0) + c_2(z - z_0)( z - z_1) + c_3(z - z_0)( z - z_1)( z - z_2) + ... + c_n(z - z_0)( z - z_1)( z - z_2)...( z - z_{n-1})
+
+Siendo {c_0,...,c_n} las coordenadas del polinomio y la expresión anterior del polinomio interpolador 
+la conocida como diferencias divididas.
+
+Teniendo en cuenta que existe una función p tal que p(z_i)=w_i y haciendo sucesivamente:
+
+ z = z_i , i={0,...,n}
+
+Se llega a:
+
+c_0=w_0
+c_1= \frac{w_1 - w_0}{z_1 - z_0}
+c_2= \frac{1}{z_2 - z_1}\left ( \frac{w_2 - w_1}{z_2 - z_0} - \frac{w_1 - w_0}{z_1 - z_0} \right )</math :<math>...
+Con los siguientes polinomios:
+
+D_0=1
+D_j=\prod_{i=0}^{j-1} (z - z_i) , j=1,2,3,...,n
+Las D_i satisfacen la relación de recurrencia:
+
+[D_{i+1}(z)] = (z - z_i)[D_i(z)]
+
+Y finalmente se obtiene el vector C={D_0,D_1,...,D_n} en P_n \in \real, con lo que se puede escribir el polinomio interpolador de Newton en función de la nueva base C, de la forma que sigue:
+
+p(z) = c_{0}D_0 + c_{1}D_1 + ... + c_{n}D_n
+
+

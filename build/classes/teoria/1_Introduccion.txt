@@ -1,0 +1,13 @@
+﻿------------------Introducción a la solución de sistemas de ecuaciones no lineales-------
+
+Estos métodos generalizan e integran los métodos para solución de ecuaciones algebraicas de la forma f(x) = 0 
+con los métodos de solución de sistemas de ecuaciones,Ax = b, para resolver un sistemas de varias ecuaciones 
+con varias variables cuya representación es: 
+
+                 f1(x1,x2,...,xn) = 0
+                 f2(x1,x2,...,xn) = 0
+                          .
+                          .
+                 fn(x1,x2,...,xn) = 0
+
+Donde fi(x1,x2,..,xn) = 0 para 1<=i<=n es una función (lineal o no) de las variables independinetes x1,x2,...,xn.

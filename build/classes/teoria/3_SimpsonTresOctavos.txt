@@ -1,0 +1,16 @@
+﻿-------------------------------Regla de Simpson 3/8----------
+
+La regla compuesta basada en un polinomio de 4 puntos o cúbico se
+conoce como Simpson 3/8.
+
+Se aplica a un conjunto de subintervalos, cuyo valor para n es múltiplo
+de 3.
+
+Se aplica igual que la regla de Simpson 1/3. Si la función es conocida
+se divide el intervalo de integración en n paneles donde n debe ser
+divisible entre 3.
+
+La Regla de Simpson 3/8 es menos eficiente que Simpson 1/3. Sin
+embargo, se emplea cuando se tienen una tabla de valores con n
+impar, ya que se combinan las dos reglas.
+

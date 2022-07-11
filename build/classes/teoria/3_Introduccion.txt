@@ -1,0 +1,26 @@
+﻿---------------------Derivación e Integración Numérica-------------
+
+La estrategia usual de desarrollo de fórmulas de integración numérica
+es similar a las de diferenciación numérica. Se hace pasar un
+polinomio a través de puntos definidos por una función, entonces se
+integra esta aproximación polinomial a la función. 
+
+Esto permite integrar una función conocida solo como una tabla de valores.
+Cuando los valores están igualmente espaciados, las fórmulas
+progresivas de Newton son un punto conveniente para empezar.
+
+            b∫a f (x)dx = b∫a Pn (Xs)dx
+
+ 
+La fórmula que de aquí se obtenga puede no ser muy exacta porque
+el polinomio no es idéntico a f(x).
+
+Existen varias maneras de emplear la fórmula (1). El intervalo de
+integración (a, b) puede coincidir con el rango de ajuste del
+polinomio, (x0, xn). En este caso se obtienen las fórmulas de Newton-
+Cotes, se trata de un conjunto de reglas de integración
+correspondientes a los grados variables del polinomio de
+interpolación.
+
+Las tres primeras, con el grado del polinomio igual a 1,
+2 o 3, son particularmente importantes.

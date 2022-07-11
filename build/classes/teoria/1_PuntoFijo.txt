@@ -1,0 +1,36 @@
+﻿--------------------Método del Punto Fijo-------------
+
+Este método consiste en escribir el sistema de ecuaciones:
+
+                        | f1(x1,x2,...,xn) = 0 |
+                        | f2(x1,x2,...,xn) = 0 |
+     F(x1,x2,...,xn) =  |          .           | = F(x)
+                        |          .           |
+                        | fn(x1,x2,...,xn) = 0 |
+
+En una forma equivalente, donde cada una de las ecuaciones se 
+resuelve para una variable de tal manera que se obtenga:
+
+               x1 = g1(x1,x2,...,xn)
+               x2 = g2(x1,x2,...,xn)
+                         .
+                         .
+               xn = gn(x1,x2,...,xn)
+
+Estas ecuaciones se toman como fórmulas iterativas, para lo que
+se escriben de la siguiente forma: 
+
+         k+1Xi = gi(kX1,kX2,...,kXn)
+          para i = 1,2,..,n.
+
+Se comienza con un vector inicial 
+
+              | 0X1 |
+              | 0X2 |
+       X0  =  |  .  |
+              |  .  |
+              | 0Xn |
+
+Se calculan nuevos valores (1X1,1X2,..,1Xn) y se repite el proceso,
+esperando que en cada iteración los valores se aproximen a la raíz 
+buscada.

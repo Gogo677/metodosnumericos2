@@ -1,0 +1,60 @@
+﻿---------------------------Método de Newton-Raphson----------
+
+El método de punto fijo tiene la gran desventaja de la obtención de las ecuaciones gi,
+ya que representan un esfuerzo matemático adicional.
+ 
+El método de Newton es uno de los métodos máspopulares para la obtención de raíces de 
+una ecuación. Por lo que veremos su generalización para sistemas de3 ecuaciones lineales.
+
+Para ello recordamos su forma para una variable 
+
+          xi+1 = xi - f(xi)/f'(xi)
+
+Y la pasamos a su forma matricial. 
+
+Cuando se trabaja con funciones de varias variables, se emplean las derivadas parciales.
+La generalización de derivada para sistemas de ecuaciones de varias variables es la matriz 
+jacobiana. 
+
+Sean fi(x1,x2,...,xn), con 1<=i<=n, funciones con n variables (xi) independientes. 
+Su matriz jacobiana J(x1,x2,..,xn),está dada por las derivadas parciales de cada una
+de las funciones con respecto a cada una de las variables. 
+
+                   | f1x1 f1x2 .. .. f1xn |
+                   | f2x1 f2x2 .. .. f2xn |
+            J  =   | f3x1 f3x2 .. .. f3xn |
+                   |  .    .   .. ..   .  |
+                   | fnx1 fnx2 .. .. fnxn |
+
+Usando notación vectorial,
+        
+              F(X) = 0
+            F = [f1,f2,...,fn]^t
+            X = [x1,x2,...,n]^t
+
+La extensión del método de Newton para sistemas no lineales es:
+
+        X^(k+1) = X^k - [F'(X^k)]^-1 * F(X^k)
+
+Donde F'(X^k) es la matriz jacobiana. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 

@@ -1,0 +1,6 @@
+La regla o método de Simpson (nombrada así en honor de Thomas Simpson) y a veces llamada regla de Kepler es un método de integración numérica que se utiliza para obtener la aproximación de una integral.
+
+Este método consiste en la aproximación del cálculo del área plana bajo una curva utilizando
+trapecios curvilíneos a partir una interpolación con una función cuadrática.
+
+

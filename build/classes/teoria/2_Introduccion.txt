@@ -1,0 +1,42 @@
+﻿---------------------Interpolación y aproximación polinomial------
+
+Es común encontrar datos tabulados de la forma (xi,yi), para i = 0,1,..,n.
+Donde y = f(x) y f(x) es una función desconocida pero se requiere conocer algún 
+valor de y para alguna x que no se encuentra en la tabla. Este procedimiento es 
+lo que se conoce como Interpolación. 
+
+-Funciones polinomiales 
+
+Las funciones de aproximación se obtienen por combinaciones lineales de elementos
+de familias de funciones denominadas elementales. En general tendrán la forma:
+
+ a0g0(x) + a1g1(x) + a2g2(x) + ... + angn(x) = y
+
+Donde ai, 0<=i<=n, son constantes por determinar y gi(x), 0<=i<=n, son funciones 
+de una familia particular. 
+
+Los monomios en x(x0,x1,x2,..,xn) constituyen la familia o grupo más empleado; sus 
+combinaciones generan aproximaciones del tipo polinomial. 
+
+       a0 + a1x + a2x^2 + ... + anx^n = y
+
+-Funciones de aproximación 
+
+Se obtienen por combinaciones lineales de elementos de familias de funciones. En general
+tendrán la forma : 
+
+        y = a0 + a1x + a2x^2 + ... + anx^n
+
+Donde ai, 0<=i<=n, son constantes por determinar.
+Los n+1 puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes ai. 
+
+yi = a0 + a1xj + ... + an(xj)^n. 
+
+Una vez que se obtiene el polinomi de aproximación se puede emplear para obtener puntos 
+adicionales a los existentes en la tabla. 
+
+-Interpolación polinomial 
+
+si se tiene un conjunto de n+1 puntos (xi,yi) pára i = 0,1,..,n para representar a 'y' como
+una función de valuación única de x, es posible encontrar un polinomio único de grado n que 
+pasa por los puntos.  
